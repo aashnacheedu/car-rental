@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Dashboard</h1>
+    <p id="welcome-message">Choose your start and end date to pick a car:</p>
+
+    <nav>
+      <ul>
+        <li><a href="my-bookings.html">My Bookings</a></li>
+        <li><a href="#" id="logout">Logout</a></li>
+      </ul>
+    </nav>
+
+    <h2>Available Cars</h2>
+    <div id="car-list"></div>
+
+    <h2>Book Selected Car</h2>
+    <form id="booking-form">
+    
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" required />
+    
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" required />
+    
+      <p id="booking-message"></p>
+    </form>
+    <ul id="booking-list"></ul>
+  </div>
+
+  <script src="dashboard.js"></script>
+  <script src="logout.js"></script>
+</body>
+</html>

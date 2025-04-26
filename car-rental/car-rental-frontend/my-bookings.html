@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bookings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f0f2f5;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .bookings-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .booking-item {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-item h3 {
+      margin-top: 0;
+    }
+
+    .booking-item p {
+      margin: 0.25rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Bookings</h1>
+  <button id="return-btn">Return to Dashboard</button>
+  <div id="bookings" class="bookings-container">
+  </div>
+
+  <script src="my-bookings.js"></script>
+</body>
+</html>

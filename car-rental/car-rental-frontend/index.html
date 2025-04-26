@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental System</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Car Rental System - Manage Cars</h1>
+
+    <!-- 🚗 Car Form -->
+    <form id="car-form">
+      <input type="text" id="make" placeholder="Make" required />
+      <input type="text" id="model" placeholder="Model" required />
+      <input type="number" id="year" placeholder="Year" required />
+      <input type="text" id="color" placeholder="Color" required />
+      <input type="number" id="price-per-day" placeholder="Price per Day" step="0.01" required />
+      <label>
+        Available?
+        <input type="checkbox" id="available" />
+      </label>
+      <button type="submit">Add Car</button>
+    </form>
+
+    <h2>Available Cars</h2>
+    <ul id="car-list"></ul>
+
+    <hr />
+
+    <h2>Register for Car Rental</h2>
+    <form id="register-form">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <div id="error-message"></div>
+
+    <hr />
+
+    <h2>Book a Car</h2>
+    <form id="booking-form">
+      <input type="number" id="car-id" placeholder="Car ID" required />
+      <input type="date" id="booking-date" required />
+      <button type="submit">Book Car</button>
+    </form>
+    <p id="booking-message"></p>
+
+    <h2>Your Bookings</h2>
+    <ul id="booking-list"></ul>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
